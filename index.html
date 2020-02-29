@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script src="./node_modules/react/umd/react.development.js"></script>
+    <script src="./node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script>
+        let a = React.createElement('h1',{className:'a'},"holleword")
+        let p = React.createElement('p',{className:'p'},'换行')
+        let inp = React.createElement('input',{className:'inp'})
+        let br = React.createElement('br')
+        let but = React.createElement('button',{className:'but'},'按钮')
+        let div = React.createElement('div',{className:'div'},a,p,br,inp,br,br,but)
+        ReactDOM.render(div,document.getElementById('app'))
+    </script>
+</body>
+<style>
+    .div{
+        height: 300px;
+        width: 100%;
+        border: 1px solid red;
+        text-align: center;
+    }
+    .a{
+        font-size: 22px;
+    }
+</style>
+</html>
